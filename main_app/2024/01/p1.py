@@ -6,9 +6,14 @@ list1 = []
 list2 = []
 for row in rows:
     items = row.split()
-    print(items)
-    list1.append[int(items[0])]
-    list2.append[int(items[1])]
+    list1.append(int(items[0]))
+    list2.append(int(items[1]))
     
-print(list1[0:3])
-print(list2[0:3])
+list1.sort()
+list2.sort()
+
+sum = 0
+for ind in range(len(list1)):
+    sum += abs(list1[ind] - list2[ind])
+    
+print(sum)
