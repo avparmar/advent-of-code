@@ -1,4 +1,4 @@
-from main_app.util.input_tools import get_input_rows
+from advent_of_code.util.input_tools import get_input_rows
 
 rows = get_input_rows()
 
