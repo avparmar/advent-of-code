@@ -4,3 +4,6 @@ def get_input_rows(filename = "input.txt"):
         input.close()
         
     return rows
+
+def get_int_row(row: str, sep = None):
+    return list(map(int, row.split(sep)))

@@ -1,13 +1,13 @@
-from advent_of_code.util.input_tools import get_input_rows
+from advent_of_code.util.input_tools import get_input_rows, get_int_row
 
 rows = get_input_rows()
 
 list1 = []
 list2 = []
 for row in rows:
-    items = row.split()
-    list1.append(int(items[0]))
-    list2.append(int(items[1]))
+    items = get_int_row(row)
+    list1.append(items[0])
+    list2.append(items[1])
     
 list1.sort()
 list2.sort()
