@@ -1,5 +1,5 @@
 [project]
-name = "main_app"
+name = "advent_of_code"
 version = "0.1.0"
 description = "My small project"
 
