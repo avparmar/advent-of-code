@@ -6,5 +6,3 @@ dependencies:
   - python
   - numpy
   - requests
-  - ta-lib
-  - apscheduler
