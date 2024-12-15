@@ -41,7 +41,18 @@ class InTool:
 
     def inbounds(self, c1: int, c2: int):
         return 0 <= c1 < self.bottom and 0 <= c2 < self.right
+
+    def inbounds_x(self, c2: int):
+        return 0 <= c2 < self.right
+
+    def inbounds_y(self, c1: int):
+        return 0 <= c1 < self.bottom
     
+    def get_or_default(self, c1: int, c2: int, default = ''):
+        if not self.inbounds(c1, c2):
+            return default
+        return self.rows[c1][c2]
+
     def get_adjacent(self, c1: int, c2: int, diagonals = False):
         res = []
         if self.inbounds(c1 - 1, c2):
