@@ -10,6 +10,7 @@ for i in range(0, it.bottom, 4):
     x_2 = int(it.rows[i + 1][12:14])
     y_2 = int(it.rows[i + 1][18:20])
 
+    # I just wanted regex practice I know it's slower stfu
     prize_re = findall(r'\d+', it.rows[i + 2])
     c_1 = int(prize_re[0]) * -1
     c_2 = int(prize_re[1]) * -1
